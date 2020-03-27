@@ -1,12 +1,11 @@
 const express = require('express');
 const app = express();
 const covidFacts = require('covid-facts');
-app.set('view engine', 'ejs');
-app.use(express.static('views'));
+app.use(express.static(__dirname, + '/views'));
 
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 
