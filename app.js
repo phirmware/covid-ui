@@ -10,10 +10,12 @@ app.get('/', (req, res) => {
 
 
 app.get('/random', (req, res) => {
+    const fact = covidFacts.random()
+    console.log('random fact endpoint triggered, fact: ', fact)
     res.json({
         message: 'success',
         statusCode: 200,
-        fact: covidFacts.random()
+        fact,
     });
 });
 
