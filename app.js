@@ -11,14 +11,6 @@ app.get('/', (req, res) => {
 
 app.get('/random', (req, res) => {
     const fact = covidFacts.random()
-    console.log('random fact endpoint triggered, fact: ', fact)
-    
-    try{
-        throw Error('Throw error')
-    } catch(e) {
-        console.log('Catch am', err)
-    }
- 
     res.json({
         message: 'success',
         statusCode: 200,
