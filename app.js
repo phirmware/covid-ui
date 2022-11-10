@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
 
 app.get('/random', (req, res) => {
     const fact = covidFacts.random()
+    console.log('fact generated', fact)
     res.json({
         message: 'success',
         statusCode: 200,
