@@ -10,6 +10,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/random', (req, res) => {
+    console.info(req)
     const fact = covidFacts.random()
     console.log('fact generated', fact)
     res.json({
