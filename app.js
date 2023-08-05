@@ -1,5 +1,5 @@
 const express = require('express');
-const app;
+const app = express();
 const covidFacts = require('covid-facts');
 app.use(express.static(__dirname, + '/views'));
 
@@ -20,5 +20,5 @@ app.get('/random', (req, res) => {
     });
 });
 
-
+throw new Error();
 app.listen(3000, () => console.log('Listening at port 3000'));
