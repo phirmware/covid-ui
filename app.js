@@ -1,4 +1,4 @@
-const express = require('expressrrr');
+const express = require('express');
 const app = express();
 const covidFacts = require('covid-facts');
 app.use(express.static(__dirname, + '/views'));
@@ -20,4 +20,4 @@ app.get('/random', (req, res) => {
     });
 });
 
-app.listen(3000, () => console.log(`Listening at port ${process.env.PORT}`));
+app.listen(process.env.PORT, () => console.log(`Listening at port ${process.env.PORT}`));
