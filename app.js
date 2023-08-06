@@ -1,5 +1,5 @@
 const express = require('express');
-const app = express();
+const app
 const covidFacts = require('covid-facts');
 app.use(express.static(__dirname, + '/views'));
 
