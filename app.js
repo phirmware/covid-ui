@@ -20,15 +20,4 @@ app.get('/random', (req, res) => {
     });
 });
 
-function sleep(seconds) {
-  return new Promise(resolve => setTimeout(resolve, seconds * 1000));
-}
-
-// Usage:
-sleep(5).then(() => {
-  console.log('5 seconds have passed');
-  throw new Error('Smart move')
-});
-
-
 app.listen(process.env.PORT, () => console.log(`Listening at port ${process.env.PORT}`));
