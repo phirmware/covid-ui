@@ -3,7 +3,6 @@ const app = express();
 const covidFacts = require('covid-facts');
 app.use(express.static(__dirname, + '/views'));
 
-
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
