@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.get('/random', (req, res) => {
     res.json({
-        message: 'success',
+        message: 'successsss',
         statusCode: 200,
         fact: covidFacts.random()
     });
