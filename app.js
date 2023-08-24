@@ -18,4 +18,4 @@ app.get('/random', (req, res) => {
     });
 });
 
-app.listen(process.env.PORT, () => console.log(`Listening at port ${process.env.PORT}`));
+app.listen(process.env.PORT, () => console.log(`Listening at port ${process.env.PORT} ${process.env.MESSAGE}`));
