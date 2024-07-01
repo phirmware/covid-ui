@@ -7,7 +7,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
 
-
 app.get('/random', (req, res) => {
     console.info(req, 'ra')
     const fact = covidFacts.random()
