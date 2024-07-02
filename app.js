@@ -9,7 +9,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/random', (req, res) => {
-    console.info(req, 'ra')
     const fact = covidFacts.random()
     res.json({
         message: 'success',
