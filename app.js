@@ -4,6 +4,7 @@ const logger = require('pino-http');
 const covidFacts = require('covid-facts');
 
 app.use(logger());
+
 app.use(express.static(__dirname, + '/views'));
 
 app.get('/', (req, res) => {
