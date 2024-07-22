@@ -1,4 +1,5 @@
 const express = require('express');
+
 const app = express();
 const logger = require('pino-http');
 const covidFacts = require('covid-facts');
