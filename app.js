@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 // const logger = require('pino-http');
 const morgan = require('morgan');
+
 const covidFacts = require('covid-facts');
 
 app.use(morgan());
