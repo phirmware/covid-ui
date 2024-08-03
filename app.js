@@ -6,7 +6,7 @@ const covidFacts = require('covid-facts');
 const app = express();
 
 // app.use(logger());
-app.use(morgan('combined'));
+app.use(morgan('dev'));
 
 app.use(express.static(__dirname, + '/views'));
 
