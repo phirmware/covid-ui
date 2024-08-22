@@ -12,6 +12,7 @@
     "covid-facts": "^1.0.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "http-proxy-middleware": "^3.0.0",
     "morgan": "^1.10.0",
     "pino-http": "10.1.0"
   }
