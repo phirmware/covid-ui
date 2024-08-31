@@ -1,5 +1,5 @@
 const express = require('express');
-const logger = require('pino-http');
+// const logger = require('pino-http');
 const morgan = require('morgan');
 const covidFacts = require('covid-facts');
 const url = require('url');
