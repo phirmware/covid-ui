@@ -12,4 +12,4 @@ RUN npm install
 RUN sleep 15
 
 # Default Command to launch the Application
-CMD ["node", "app.js"]
+CMD ["node", "index.js"]
