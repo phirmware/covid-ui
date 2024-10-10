@@ -9,7 +9,5 @@ COPY ./ ./
 # Install the Project Dependencies like Express Framework
 RUN npm install
 
-RUN sleep 40
-
 # Default Command to launch the Application
 CMD ["node", "index.js"]
