@@ -10,4 +10,4 @@ COPY ./ ./
 RUN npm install
 
 # Default Command to launch the Application
-CMD ["node", "index.js"]
+CMD ["node", "app.js"]
