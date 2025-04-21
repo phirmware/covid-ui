@@ -20,6 +20,7 @@ app.get('/random', (req, res) => {
     res.json({
         message: 'success',
         statusCode: 200,
+        env: process.env,
         fact,
     });
 });
