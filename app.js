@@ -1,13 +1,13 @@
 const express = require('express');
-// const logger = require('pino-http');
-const morgan = require('morgan');
+const logger = require('pino-http');
+// const morgan = require('morgan');
 const covidFacts = require('covid-facts');
 const url = require('url');
 
 const app = express();
 
-// app.use(logger());
-app.use(morgan('dev'));
+app.use(logger());
+// app.use(morgan('dev'));
 
 app.use(express.static(__dirname, + '/views'));
 
