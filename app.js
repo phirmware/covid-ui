@@ -1,13 +1,13 @@
 const express = require('express');
 const logger = require('pino-http');
-// const morgan = require('morgan');
+const morgan = require('morgan');
 const covidFacts = require('covid-facts');
 const url = require('url');
 
 const app = express();
 
 app.use(logger());
-// app.use(morgan('dev'));
+app.use(morgan('dev'));
 
 app.use(express.static(__dirname, + '/views'));
 
@@ -16,6 +16,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/random', (req, res) => {
+    console.warn('About to generate covid fact')
+    console.log('warning about covid fact')
     const fact = covidFacts.random()
 
     res.json({
