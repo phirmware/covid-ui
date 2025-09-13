@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 
 app.get('/random', (req, res) => {
     const fact = covidFacts.random()
+    throw new Error('testing error')
     res.json({
         message: 'success',
         statusCode: 200,
